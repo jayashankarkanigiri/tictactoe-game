@@ -5,10 +5,12 @@ import History from './components/History';
 import { calculateWinner } from './winner';
 import './styles.scss';
 
-function App() {
-  const [history, setHistory] = useState([
+const NEW GAME = [
     { squares: Array(9).fill(null), isXNext: false },
-  ]);
+]
+
+function App() {
+  const [history, setHistory] = useState(NEW GAME);
   const [currentMove, setCurrentMove] = useState(0);
   const gamingBoard = history[currentMove];
 
